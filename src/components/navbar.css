@@ -1,0 +1,76 @@
+.navbar-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-logo .logo-container {
+  display: flex;
+  align-items: center;
+  color: #212529;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-logo .logo-image {
+  height: 100%; /* You can adjust this value */
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-search {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 2rem;
+  max-width: 600px;
+}
+
+.navbar-search input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.navbar-search button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 1.5rem;
+}
+
+.navbar-links a {
+  color: #495057;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  color: #0056b3;
+}

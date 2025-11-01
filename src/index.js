@@ -1,7 +1,9 @@
 import React from 'react';
+import ReactElement from 'react'; // eslint-disable-line
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // eslint-disable-line
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './App.css';
+import App from './App.tsx';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

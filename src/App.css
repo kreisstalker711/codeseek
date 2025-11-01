@@ -1,38 +1,52 @@
+body {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  padding: 2rem;
+  padding-bottom: 80px; /* Add padding to avoid footer overlap */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Light Theme (Default) */
+.light-theme {
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Dark Theme */
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
-.App-link {
-  color: #61dafb;
+.dark-theme .card,
+.dark-theme .about-container,
+.dark-theme .settings-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-theme h1,
+.dark-theme h2 {
+  color: #bb86fc;
+}
+
+.dark-theme .navbar-header {
+  background-color: #1e1e1e;
+  border-bottom-color: #333;
+}
+
+.dark-theme .navbar-logo a,
+.dark-theme .navbar-links a {
+  color: #e0e0e0;
+}
+
+.dark-theme .navbar-search input {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
 }
