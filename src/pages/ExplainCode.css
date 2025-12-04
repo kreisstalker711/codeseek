@@ -1,0 +1,116 @@
+.explain-code-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.explain-code-container h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.explain-code-container > p {
+  text-align: center;
+  color: var(--text-color-secondary);
+  margin-bottom: 2rem;
+}
+
+.code-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.code-input {
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.code-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.code-form button:hover:not(:disabled) {
+  background-color: var(--primary-color-hover);
+}
+
+.code-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.result-section {
+  margin-top: 2.5rem;
+}
+
+.result-section h2 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.result-section pre {
+  background-color: var(--code-bg-color);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.explanation-content p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  color: var(--text-color-secondary);
+}
+
+.loader {
+  border: 4px solid var(--border-color);
+  border-top: 4px solid var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.loading-container p {
+  font-size: 1rem;
+  color: var(--text-color-secondary);
+}
+
+.spinner {
+  border: 4px solid var(--border-color);
+  border-top: 4px solid var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

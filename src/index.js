@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactElement from 'react'; // eslint-disable-line
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // eslint-disable-line
 import ReactDOM from 'react-dom/client';
 import './App.css';

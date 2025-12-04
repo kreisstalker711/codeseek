@@ -13,6 +13,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
     event.preventDefault();
     // In a real app, you'd validate credentials here
     if (username && password) {
+      localStorage.setItem('username', username);
       onLogin();
     } else {
       alert('Please enter a username and password.');

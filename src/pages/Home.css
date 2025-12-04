@@ -1,0 +1,41 @@
+.home-container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.greeting h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #343a40;
+}
+
+.dark-theme .greeting h2 {
+  color: #e0e0e0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #007bff;
+}

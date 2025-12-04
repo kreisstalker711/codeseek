@@ -5,11 +5,13 @@ import Footer from './components/footer.tsx';
 import About from './pages/about.tsx';
 import Settings from './pages/settings.tsx';
 import Login from './pages/Login.tsx';
+import ExplainCode from './pages/ExplainCode.tsx';
+import LandingPage from './pages/LandingPage.tsx';
 import { ThemeContext, Theme } from './components/ThemeContext.tsx';
 import './App.css';
 
 // A simple placeholder for your home page content
-const Home = () => <h2>Welcome to CodeSeek.AI</h2>;
+// const Home = () => <h2>Welcome to CodeSeek.AI</h2>;
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -47,9 +49,10 @@ const App: React.FC = () => {
             <Navbar />
             <main className="content">
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<LandingPage />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/settings" element={<Settings />} />
+                <Route path="/explain-code" element={<ExplainCode />} />
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </main>
